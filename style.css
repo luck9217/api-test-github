@@ -6,12 +6,12 @@
 }
 
 .container {
-  display: flex;
+  display: inline;
   justify-content: center;
 }
-
+.blur { filter: blur(10px); }
 aside {
-  display: flex;
+  display: inline;
   justify-content: center;
 }
 
@@ -26,4 +26,8 @@ main {
 #repos-list {
   display: flex;
   flex-direction: column;
+}
+.center {
+  text-align: center;
+  border: 3px solid green;
 }

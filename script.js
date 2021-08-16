@@ -51,7 +51,23 @@ const editProfile =async()=>{
 
 };
 
-editProfile();
+const avatarOnMove=(event)=>{
+    
+    
+    if(event.type ==="mouseenter" ){
 
+        avatarSelected.classList.toggle('blur');
+    }else{
+        avatarSelected.className="Redonda";
+    }
+
+    
+}
+
+const avatarSelected=document.querySelector(`#avatar`);
+avatarSelected.addEventListener("mouseenter",avatarOnMove);
+avatarSelected.addEventListener("mouseleave",avatarOnMove);
+
+editProfile();
 
 
